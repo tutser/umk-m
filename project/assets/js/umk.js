@@ -2,13 +2,14 @@ $(document).ready(function () {
   $('#tab1').prop('checked', true);
 
 
-  $('.menu-btn').on('click', function () {
-    $('.sidebar').toggleClass('sidebar-hidden');
-    $('.right_unit').toggleClass('right_unit-hidden');
+  $('.menu_btn').on('click', function () {
+    $('.wrap_sidebar_menu-hidden').toggleClass('wrap_sidebar_menu-visible');
+    // $('.sidebar').toggleClass('sidebar-hidden');
+    // $('.right_unit').toggleClass('right_unit-hidden');
     // console.log("eevev");
-    $('.wrap_unit_login').toggleClass('wrap_unit_login-hidden');
+    // $('.wrap_unit_login').toggleClass('wrap_unit_login-hidden');
     // $('.unit_login').toggleClass('unit_login-hidden');
-    $('.sidebar_menu_list').toggleClass('menu_list-hidden');
+    // $('.sidebar_menu_list').toggleClass('menu_list-hidden');
     $('.menu-btn').toggleClass('menu-btn_active');
     // $('.wrap_menu-btn').toggleClass('wrap_menu-btn_active');
     // $('.menu-lable_hidden').toggleClass('menu-lable_visible');

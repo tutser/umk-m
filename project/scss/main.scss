@@ -86,13 +86,23 @@ body {
   }
 }
 
+.wrap_sidebar_menu-hidden {
+  transform: translateY(1000px);
+  transition: 0.3s;
+}
+.wrap_sidebar_menu-visible {
+  transform: translateY(0px);
+  transition: 0.3s;
+}
+
 .sidebar_menu_list {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  width: calc(100vw - 12px);
+  width: calc(100vw - 10px);
   margin: 5px;
+
   // border: 1px solid red;
   background-color: rgba(0, 0, 0, 0.5);
 }

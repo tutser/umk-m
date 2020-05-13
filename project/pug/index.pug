@@ -6,14 +6,15 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="stylesheet", href="css/reset.css")
     link(rel="stylesheet", href="css/main.css")
-    title Document
+    title УМК
   body 
     .wrap_menu-btn
       a(href="#", class="menu_btn")
         span
     
     include includes/sidebar_menu
-    +sidebar
+    .wrap_sidebar_menu-hidden
+      +sidebar
 
     
     .index_p 
