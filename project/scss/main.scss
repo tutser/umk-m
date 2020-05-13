@@ -29,7 +29,63 @@ body {
   background-color: $col-green;
 }
 
-.wrap_menu_btn {
+// ------------------------ Кнопка меню -------------------------------
+.menu-icon-wrapper {
+  /*   background: red; */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid red;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.menu-icon {
+  position: relative;
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+  &::before {
+    position: absolute;
+    left: 0;
+    top: -13px;
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+  &.menu-icon-active {
+    background-color: transparent;
+  }
+  &.menu-icon-active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  &.menu-icon-active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+}
+
+// ------------------------ Кнопка меню (end) -------------------------------
+.wrap_menu_btn_old {
   position: absolute;
   z-index: 20;
   top: 10px;
@@ -44,12 +100,12 @@ body {
     height: 40px;
   }
 }
-.wrap_menu_btn-close {
+.wrap_menu_btn-close_old {
   right: 36px;
   top: 20px;
 }
 
-.menu_btn {
+.menu_btn_old {
   span,
   span::after,
   span::before {
@@ -72,7 +128,7 @@ body {
   }
 }
 
-.menu_btn-close {
+.menu_btn-close_old {
   span::after,
   span::before {
     position: absolute;
@@ -111,6 +167,7 @@ body {
   }
 }
 
+// --------------------------- Меню --------------------------------------
 .wrap_sidebar_menu-hidden {
   transform: translateY(1000px);
   transition: 0.3s;
@@ -133,7 +190,7 @@ body {
 }
 
 .sidebar_menu_list {
-  margin-top: 60px;
+  margin-top: 80px;
   // padding-bottom: 10px;
   a {
     text-decoration: none;
@@ -197,3 +254,5 @@ body {
     color: red;
   }
 }
+
+// --------------------------- Меню (end) --------------------------------------

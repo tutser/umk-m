@@ -1,9 +1,14 @@
 $(document).ready(function () {
   $('#tab1').prop('checked', true);
 
+  document.querySelector('.menu-icon-wrapper').onclick = function () {
+    document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+    document.querySelector('.wrap_sidebar_menu-hidden').classList.toggle('wrap_sidebar_menu-visible');
+  }
+
 
   $('.menu_btn').on('click', function () {
-    $('.wrap_sidebar_menu-hidden').toggleClass('wrap_sidebar_menu-visible');
+    // $('.wrap_sidebar_menu-hidden').toggleClass('wrap_sidebar_menu-visible');
     // $('.right_unit').toggleClass('right_unit-hidden');
     // console.log("eevev");
     // $('.wrap_unit_login').toggleClass('wrap_unit_login-hidden');
