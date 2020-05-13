@@ -31,14 +31,14 @@ body {
     left: 50%;
     margin-left: -15px;
     width: 30px;
-    height: 2px;
+    height: 3px;
     background-color: #fff;
   }
   span::before {
     transform: translateY(9px);
   }
   span::after {
-    transform: translateY(-9px);
+    transform: translateY(-10px);
   }
 }
 
