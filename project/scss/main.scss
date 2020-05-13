@@ -1,5 +1,15 @@
-$col-green: #CEFFD0FF;
+$col-green: #ceffd0ff;
 
 body {
+  background: url("../img/gray-coteries.png");
+  // background: url("../img/fon2.jpg") 70% 90% no-repeat;
+  // background-size: cover;
+  // background: linear-gradient(transparent 50%, rgba(0, 186, 0, 0.2) 50%),
+  // linear-gradient(90deg, rgba(0, 186, 0, 0.2) 50%, transparent 50%);
+  // background-size: 40px 40px;
+  // background-position: center center;
+  // overflow: hidden;
+  // background-repeat: no-repeat;
+
   background-color: $col-green;
 }
