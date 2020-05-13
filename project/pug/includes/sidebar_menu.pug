@@ -1,0 +1,62 @@
+mixin sidebar (check)
+	.sidebar_menu_list
+		div
+			input#sb_ml-1(name="sidebar_menu-1", type="checkbox" )
+			label.label_sb_ml(for="sb_ml-1")
+				| Нормативные документы
+			article.sb_ml.submenu-1
+				ul
+					li
+						a#sub_menu_1-1(href="normdoc.html")
+							| ФГОС
+					li
+						a#sub_menu_1-2(href="normdoc.html")
+							| Стандарт
+					li
+						a#sub_menu_1-3(href="normdoc.html")
+							| Рабочая программа
+		div
+			input#sb_ml-2(name="sidebar_menu-2", type="checkbox")
+			label.label_sb_ml(for="sb_ml-2")
+				| Теоретический материал
+			article.sb_ml.submenu-2
+				ul
+					li
+						a#sub_menu_2-1(href="teormat.html")
+							| Конспекты
+					li
+						a#sub_menu_2-2(href="teormat.html")
+							| Презентации
+		div
+			input#sb_ml-3(name="sidebar_menu-3", type="checkbox")
+			label.label_sb_ml(for="sb_ml-3")
+				| Контроль знаний
+			article.sb_ml.submenu-3
+				ul
+					li
+						a#sub_menu_3-1(href="control.html")
+							| Контрольная работа
+					li
+						a#sub_menu_3-2(href="control-test.html")
+							| Тест
+		div
+			input#sb_ml-4(name="sidebar_menu-4", type="checkbox")
+			label.label_sb_ml(for="sb_ml-4")
+				| Самостоятельные работы
+			article.sb_ml.submenu-4
+				ul
+					li
+						a#sub_menu_4-1(href="samrab.html")
+							| Задания для сам. работ
+					li
+						a#sub_menu_4-2(href="samrab.html")
+							| Тренировочные задания
+		div
+			input#sb_ml-5(name="sidebar_menu-5", type="checkbox")
+			label.label_sb_ml(for="sb_ml-5")
+				| Практические работы
+			article.sb_ml.submenu-5
+				ul
+					li
+						a#sub_menu_5-1(href="practica.html")
+							| Лабораторные работы
