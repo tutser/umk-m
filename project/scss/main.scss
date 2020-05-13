@@ -1,18 +1,47 @@
 $col-green: #ceffd0ff;
 
 body {
-  background: url("../img/gray-coteries.png");
-  // background: url("../img/fon2.jpg") 70% 90% no-repeat;
-  // background-size: cover;
-  // background: linear-gradient(transparent 50%, rgba(0, 186, 0, 0.2) 50%),
-  // linear-gradient(90deg, rgba(0, 186, 0, 0.2) 50%, transparent 50%);
-  // background-size: 40px 40px;
-  // background-position: center center;
-  // overflow: hidden;
-  // background-repeat: no-repeat;
+  background: url("../img/dark-honeycomb.png");
 
   background-color: $col-green;
 }
+
+.wrap_menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: 0.5s;
+  // z-index: 50;
+  // border: 1px solid green;
+  a {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.menu_btn {
+  span,
+  span::after,
+  span::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+  }
+  span::before {
+    transform: translateY(7px);
+  }
+  span::after {
+    transform: translateY(-9px);
+  }
+}
+
 .index_p {
   // border: 1px solid red;
   // min-width: 100px;
@@ -25,7 +54,9 @@ body {
   p {
     font-size: 32px;
     text-align: center;
-    border: 1px solid red;
+    line-height: 40px;
+    color: white;
+    // border: 1px solid red;
     padding: 30px;
   }
 }
