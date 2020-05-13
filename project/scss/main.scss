@@ -29,7 +29,7 @@ body {
   background-color: $col-green;
 }
 
-.wrap_menu-btn {
+.wrap_menu_btn {
   position: absolute;
   z-index: 20;
   top: 10px;
@@ -37,11 +37,16 @@ body {
   transition: 0.5s;
   // z-index: 50;
   // border: 1px solid green;
+
   a {
     display: block;
     width: 40px;
     height: 40px;
   }
+}
+.wrap_menu_btn-close {
+  right: 36px;
+  top: 20px;
 }
 
 .menu_btn {
@@ -49,7 +54,7 @@ body {
   span::after,
   span::before {
     position: absolute;
-
+    // display: none;
     content: "";
     top: 50%;
     margin-top: -1px;
@@ -64,6 +69,26 @@ body {
   }
   span::after {
     transform: translateY(-14px);
+  }
+}
+
+.menu_btn-close {
+  span::after,
+  span::before {
+    position: absolute;
+    left: 38px;
+    top: -18px;
+    content: "";
+    height: 40px;
+    width: 4px;
+    background-color: #ffffff;
+    // border: 1px solid red;
+  }
+  span::before {
+    transform: rotate(45deg);
+  }
+  span::after {
+    transform: rotate(-45deg);
   }
 }
 
