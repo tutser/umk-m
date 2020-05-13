@@ -13,3 +13,19 @@ body {
 
   background-color: $col-green;
 }
+.index_p {
+  // border: 1px solid red;
+  // min-width: 100px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 32px;
+    text-align: center;
+    border: 1px solid red;
+    padding: 30px;
+  }
+}
