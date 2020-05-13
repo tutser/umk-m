@@ -1,17 +1,21 @@
 $(document).ready(function () {
   $('#tab1').prop('checked', true);
 
+  document.querySelector('.menu-icon-wrapper').onclick = function () {
+    document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+    document.querySelector('.wrap_sidebar_menu-hidden').classList.toggle('wrap_sidebar_menu-visible');
+  }
+
 
   $('.menu_btn').on('click', function () {
     $('.wrap_sidebar_menu-hidden').toggleClass('wrap_sidebar_menu-visible');
-    // $('.sidebar').toggleClass('sidebar-hidden');
     // $('.right_unit').toggleClass('right_unit-hidden');
     // console.log("eevev");
     // $('.wrap_unit_login').toggleClass('wrap_unit_login-hidden');
     // $('.unit_login').toggleClass('unit_login-hidden');
     // $('.sidebar_menu_list').toggleClass('menu_list-hidden');
-    $('.menu-btn').toggleClass('menu-btn_active');
-    // $('.wrap_menu-btn').toggleClass('wrap_menu-btn_active');
+    $('.menu_btn').toggleClass('menu_btn-close');
+    // $('.wrap_menu_btn').toggleClass('wrap_menu_btn-close');
     // $('.menu-lable_hidden').toggleClass('menu-lable_visible');
     // $('.content_unit').toggleClass('content_unit-ext');
   });
