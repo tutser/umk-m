@@ -4,6 +4,9 @@ $(document).ready(function () {
   document.querySelector('.menu-icon-wrapper').onclick = function () {
     document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
     document.querySelector('.wrap_sidebar_menu-hidden').classList.toggle('wrap_sidebar_menu-visible');
+    document.querySelector('.index_p').classList.toggle('index_p-transparent');
+    $(".list_docs").css("opacity", "0.5");
+    // document.querySelector('.list_docs').classList.toggle('index_p-transparent');
   }
 
 

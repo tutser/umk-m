@@ -27,6 +27,7 @@ body {
   background: url("../img/dark-honeycomb.png");
   font-family: "Roboto";
   background-color: $col-green;
+  overflow: hidden;
 }
 
 // ------------------------ Кнопка меню -------------------------------
@@ -166,6 +167,24 @@ body {
     padding: 30px;
   }
 }
+.index_p-transparent {
+  // border: 1px solid red;
+  // min-width: 100px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.2);
+    // border: 1px solid red;
+    padding: 30px;
+  }
+}
 
 // --------------------------- Меню --------------------------------------
 .wrap_sidebar_menu-hidden {
@@ -181,12 +200,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
   width: calc(100vw - 10px);
   margin: 5px;
 
   // border: 1px solid red;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .sidebar_menu_list {
@@ -256,3 +275,33 @@ body {
 }
 
 // --------------------------- Меню (end) --------------------------------------
+
+.list_docs {
+  // border: 1px solid red;
+  margin-top: 80px;
+}
+
+.title_docs {
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: $col_submenu_sidebar;
+  padding: 10px 40px 10px 15px;
+}
+
+.lable_docs {
+  color: wheat;
+  font-size: 1em;
+  padding: 20px 10px 10px 10px;
+  // border: 1px solid green;
+  text-decoration: underline;
+}
+
+.items_docs {
+  text-align: center;
+  color: white;
+  padding: 10px 3px;
+  border: 1px solid aquamarine;
+  margin: 5px 3px;
+  border-radius: 5px;
+}
