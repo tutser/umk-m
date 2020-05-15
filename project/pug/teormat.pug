@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="en")
+  include includes/head
+  body 
+    include includes/sidebar_menu
+
+    .menu-icon-wrapper
+      .menu-icon
+    .wrap_content
+      .wrap_opacity-hidden
+      .wrap_sidebar_menu-hidden
+        div.to_index
+          a(href="index.html") На главную
+        +sidebar
+      
+
+      
+      .list_docs
+        .title_docs Теоретические материалы
+        
+        .lable_docs Конспекты
+        .items_docs
+          a(href="../files/normdocs/fgos_09_02_07.pdf.html") "Знакомство с Компас 3D. Интерфейс программы"
+        
+        .lable_docs Презентации
+        .items_docs
+          a(href="../files/normdocs/prof_standart_06.015.html") "Основы 3D моделирования"
+        
+        
+    
+    
+    
+
+
+  include includes/scripts_in_footer

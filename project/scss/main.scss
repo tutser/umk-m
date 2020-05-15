@@ -27,7 +27,6 @@ body {
   background: url("../img/dark-honeycomb.png");
   font-family: "Roboto";
   background-color: $col-green;
-  overflow: hidden;
 }
 
 // ------------------------ Кнопка меню -------------------------------
@@ -132,15 +131,15 @@ body {
 
 // --------------------------- Меню --------------------------------------
 .wrap_sidebar_menu-hidden {
-  transform: translateY(1000px);
+  transform: translateX(1000px);
   transition: 0.3s;
 }
 .wrap_sidebar_menu-visible {
-  transform: translateY(0px);
+  transform: translateX(0px);
   transition: 0.3s;
 }
 .sb_menu-margin-top {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .to_index {
@@ -236,6 +235,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
   // border: 5px solid green;
 }
 
@@ -250,8 +250,9 @@ body {
   // margin-top: 80px;
   // opacity: 0.3;
 }
-.wrap_opacity-hidden_off {
+.wrap_opacity-hidden {
   position: absolute;
+  display: none;
   top: 0;
   left: 0;
   width: 100vw;
@@ -259,6 +260,14 @@ body {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.display_on {
+  display: block;
+}
+.display_off {
+  display: none;
+}
+
 .title_docs {
   color: white;
   text-align: center;
@@ -277,10 +286,16 @@ body {
 
 .items_docs {
   text-align: center;
-  color: white;
-  padding: 10px 3px;
+  // color: white;
+  // padding: 10px 3px;
   border: 1px solid #26aaf0;
   line-height: 1.5em;
   margin: 5px 3px;
   border-radius: 5px;
+  a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 3px;
+  }
 }

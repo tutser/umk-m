@@ -16,6 +16,7 @@ $(document).ready(function () {
     $('.menu-icon').toggleClass('menu-icon-active');
     $('.wrap_sidebar_menu-hidden').toggleClass('wrap_sidebar_menu-visible');
     $('.index_p').toggleClass('index_p-transparent');
+    $('.display_off').toggleClass('.display_on');
 
 
 
