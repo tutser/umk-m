@@ -2,17 +2,18 @@
 html(lang="en")
   include includes/head
   body 
+    include includes/sidebar_menu
     .menu-icon-wrapper
       .menu-icon
       
+    .wrap_content
     
-    include includes/sidebar_menu
-    .wrap_sidebar_menu-hidden
-      +sidebar
+      .wrap_sidebar_menu-hidden.sb_menu-margin-top
+        +sidebar
 
-    
-    .index_p 
-      p УМК по дисциплине "Компьютерная графика"
+      
+      .index_p 
+        p УМК по дисциплине "Компьютерная графика"
 
 
 

@@ -2,24 +2,34 @@
 html(lang="en")
   include includes/head
   body 
-    
+    include includes/sidebar_menu
+
     .menu-icon-wrapper
       .menu-icon
-    include includes/sidebar_menu
-    .wrap_sidebar_menu-hidden
-      +sidebar
-    .list_docs
-      .title_docs Нормативные документы
-      .lable_docs ФГОС
-      .items_docs "Об утверждении образовательного стандарта"
+    .wrap_content
+      .wrap_opacity-hidden
+      .wrap_sidebar_menu-hidden
+        div.to_index
+          a(href="index.html") На главную
+        +sidebar
       
-      .lable_docs Стандарт
-      .items_docs "Специалист по информационным системам"
-      .lable_docs Рабочая программа
-      .items_docs "Компьютерная графика гр. 301"
-      .items_docs "Компьютерная графика гр. 302"
-    
 
+      
+      .list_docs
+        .title_docs Нормативные документы
+        
+        .lable_docs ФГОС
+        .items_docs "Об утверждении образовательного стандарта"
+        
+        .lable_docs Стандарт
+        .items_docs "Специалист по информационным системам"
+        
+        .lable_docs Рабочая программа
+        .items_docs "Компьютерная графика гр. 301"
+        .items_docs "Компьютерная графика гр. 302"
+    
+    
+    
 
 
   include includes/scripts_in_footer
