@@ -1,21 +1,42 @@
 .test_unit {
   /* margin: 0px auto; */
-
-  width: 90%;
-  padding: 20px;
+  /* display: none; */
+  /* width: 90%; */
+  padding: 10px;
   font-size: 1.3em;
-  position: relative;
+  position: absolute;
+  z-index: 5;
   line-height: 1.2em;
   color: white;
-  /* border: 1px solid red; */
+  /* border: 1px solid antiquewhite; */
+}
+.wrap_test_unit {
+  /* border: 1px solid yellowgreen; */
+  margin: 0 auto;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+  /* z-index: -1; */
+}
+.wrap_test_unit-visible {
+  display: block;
+}
+.wrap_test_unit-hidden {
+  display: none;
+}
+
+#current-style {
+  display: block;
 }
 
 .test_unit p {
   text-align: center;
 }
 .test_unit h1 {
-  font-size: 1.3em;
+  font-size: 0.8em;
   margin: 0 0 20px;
+  text-align: center;
 }
 .test_unit h2 {
   font-size: 22px;
@@ -79,7 +100,6 @@
   position: absolute;
   z-index: -1;
   opacity: 0;
-  /* display: none; */
   margin: 10px 0 0 7px;
 }
 .answers [id^="slickQuiz_question"] + label {
@@ -159,6 +179,7 @@ h3 span {
 }
 .quizHeader {
   position: relative;
+  z-index: -100;
 }
 .button {
   float: left;

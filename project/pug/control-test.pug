@@ -2,8 +2,6 @@
 html(lang="en")
   include includes/head
   body 
-    
-    
     include includes/sidebar_menu
 
     .menu-icon-wrapper
@@ -11,30 +9,27 @@ html(lang="en")
     .wrap_content
       .wrap_opacity-hidden
       .wrap_sidebar_menu-hidden
-        .to_index
-          a(href="index.html") На главную
+        div.to_index-test
+          //- a(href="index.html") На главную
         +sidebar
       
-    
 
       
       .list_docs-test
-        .test_unit
-          p Тест по дисциплине «Компьютерная графика»
-          .wrap_test_unit
-            .test_unit#slickQuiz
-              h1.quizName
-              .quizArea
-                a.button.startQuiz(href="#") Начать тестирование
-                .quizHeader
-              .quizResults
-                h3.quizScore Количество правильных ответов:
-                  span
-                h3.quizLevel
-                  strong Итоговая оценка:
-                  span
-                .quizResultsCopy
-        
+        .wrap_test_unit#current-style
+          .test_unit#slickQuiz
+            h1.quizName
+            .quizArea
+              a.button.startQuiz(href="#") Начать тестирование
+              .quizHeader
+            .quizResults
+              h3.quizScore Количество правильных ответов:
+                span
+              h3.quizLevel
+                strong Итоговая оценка:
+                span
+              .quizResultsCopy
+          
         
     
     
@@ -42,4 +37,4 @@ html(lang="en")
 
   include includes/scripts_in_footer
   script.
-      $(document).ready(function() {$("#slickQuiz").slickQuiz();});
+    $(document).ready(function() {$("#slickQuiz").slickQuiz();});
